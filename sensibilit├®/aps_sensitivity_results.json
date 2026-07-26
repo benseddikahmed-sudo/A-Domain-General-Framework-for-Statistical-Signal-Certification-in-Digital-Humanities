@@ -1,0 +1,141 @@
+{
+  "baseline_weights": [
+    0.3,
+    0.25,
+    0.2,
+    0.15,
+    0.1
+  ],
+  "baseline_aps": {
+    "Shakespeare": 10.13402349153769,
+    "Copiale (decrypted)": 5.6372063880081065,
+    "Lojban": 41.35756501741821,
+    "Coptic (Sahidic/Bohairic)": 30.035758510381843,
+    "Zonaras (Byzantine chronicle)": 30.105943462556766,
+    "Pride and Prejudice": 30.120420867633012,
+    "Patrologia Latina excerpt": 30.66132924800233,
+    "Anna Komnene, Alexiad": 50.13176911012115,
+    "Moby Dick": 55.078018236899865,
+    "Arabic (Quran)": 56.46369584584967,
+    "Hebrew (Torah)": 58.38903037983991,
+    "Hoax (Markov+injected)": 66.67567567567568,
+    "Voynich, fully permuted (noise)": 71.94884069264371,
+    "Voynich Manuscript": 62.56
+  },
+  "baseline_zone_revised": {
+    "Shakespeare": "Robust",
+    "Copiale (decrypted)": "Robust",
+    "Lojban": "Uncertain",
+    "Coptic (Sahidic/Bohairic)": "Uncertain",
+    "Zonaras (Byzantine chronicle)": "Uncertain",
+    "Pride and Prejudice": "Uncertain",
+    "Patrologia Latina excerpt": "Uncertain",
+    "Anna Komnene, Alexiad": "Uncertain",
+    "Moby Dick": "Uncertain",
+    "Arabic (Quran)": "Uncertain",
+    "Hebrew (Torah)": "Uncertain",
+    "Hoax (Markov+injected)": "Uncertain",
+    "Voynich, fully permuted (noise)": "Uncertain",
+    "Voynich Manuscript": "Uncertain"
+  },
+  "baseline_zone_original": {
+    "Shakespeare": "Robust",
+    "Copiale (decrypted)": "Robust",
+    "Lojban": "Uncertain",
+    "Coptic (Sahidic/Bohairic)": "Uncertain",
+    "Zonaras (Byzantine chronicle)": "Uncertain",
+    "Pride and Prejudice": "Uncertain",
+    "Patrologia Latina excerpt": "Uncertain",
+    "Anna Komnene, Alexiad": "Probable artifact",
+    "Moby Dick": "Probable artifact",
+    "Arabic (Quran)": "Probable artifact",
+    "Hebrew (Torah)": "Probable artifact",
+    "Hoax (Markov+injected)": "Probable artifact",
+    "Voynich, fully permuted (noise)": "Probable artifact",
+    "Voynich Manuscript": "Probable artifact"
+  },
+  "global_sensitivity": {
+    "n_draws": 5000,
+    "perturbation": "uniform +-40% per weight component, then renormalized to sum 1",
+    "spearman_mean": 0.9788026373626373,
+    "spearman_min": 0.9252747252747253,
+    "spearman_p5": 0.956043956043956,
+    "zone_stability_pct_revised": {
+      "Shakespeare": 100.0,
+      "Copiale (decrypted)": 100.0,
+      "Lojban": 100.0,
+      "Coptic (Sahidic/Bohairic)": 99.98,
+      "Zonaras (Byzantine chronicle)": 97.4,
+      "Pride and Prejudice": 97.42,
+      "Patrologia Latina excerpt": 98.64,
+      "Anna Komnene, Alexiad": 100.0,
+      "Moby Dick": 100.0,
+      "Arabic (Quran)": 100.0,
+      "Hebrew (Torah)": 100.0,
+      "Hoax (Markov+injected)": 97.64,
+      "Voynich, fully permuted (noise)": 77.86,
+      "Voynich Manuscript": 100.0
+    },
+    "zone_stability_pct_original": {
+      "Shakespeare": 100.0,
+      "Copiale (decrypted)": 100.0,
+      "Lojban": 99.9,
+      "Coptic (Sahidic/Bohairic)": 99.98,
+      "Zonaras (Byzantine chronicle)": 97.4,
+      "Pride and Prejudice": 97.42,
+      "Patrologia Latina excerpt": 98.64,
+      "Anna Komnene, Alexiad": 51.52,
+      "Moby Dick": 81.88,
+      "Arabic (Quran)": 88.42,
+      "Hebrew (Torah)": 96.56,
+      "Hoax (Markov+injected)": 100.0,
+      "Voynich, fully permuted (noise)": 99.08,
+      "Voynich Manuscript": 100.0
+    }
+  },
+  "oat_zones_seen_revised": {
+    "Shakespeare": [
+      "Robust"
+    ],
+    "Copiale (decrypted)": [
+      "Robust"
+    ],
+    "Lojban": [
+      "Uncertain"
+    ],
+    "Coptic (Sahidic/Bohairic)": [
+      "Uncertain"
+    ],
+    "Zonaras (Byzantine chronicle)": [
+      "Uncertain"
+    ],
+    "Pride and Prejudice": [
+      "Uncertain"
+    ],
+    "Patrologia Latina excerpt": [
+      "Uncertain"
+    ],
+    "Anna Komnene, Alexiad": [
+      "Uncertain"
+    ],
+    "Moby Dick": [
+      "Uncertain"
+    ],
+    "Arabic (Quran)": [
+      "Uncertain"
+    ],
+    "Hebrew (Torah)": [
+      "Uncertain"
+    ],
+    "Hoax (Markov+injected)": [
+      "Uncertain"
+    ],
+    "Voynich, fully permuted (noise)": [
+      "Near-certain",
+      "Uncertain"
+    ],
+    "Voynich Manuscript": [
+      "Uncertain"
+    ]
+  }
+}

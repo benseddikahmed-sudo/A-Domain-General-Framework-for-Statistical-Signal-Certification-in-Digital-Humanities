@@ -1,0 +1,15 @@
+Anchor,Baseline_APS,Zone_original,Zone_revised,Stability_pct_original_scale,Stability_pct_revised_scale
+Shakespeare,10.13,Robust,Robust,100.0,100.0
+Copiale (decrypted),5.64,Robust,Robust,100.0,100.0
+Lojban,41.36,Uncertain,Uncertain,99.9,100.0
+Coptic (Sahidic/Bohairic),30.04,Uncertain,Uncertain,100.0,100.0
+Zonaras (Byzantine chronicle),30.11,Uncertain,Uncertain,97.4,97.4
+Pride and Prejudice,30.12,Uncertain,Uncertain,97.4,97.4
+Patrologia Latina excerpt,30.66,Uncertain,Uncertain,98.6,98.6
+"Anna Komnene, Alexiad",50.13,Probable artifact,Uncertain,51.5,100.0
+Moby Dick,55.08,Probable artifact,Uncertain,81.9,100.0
+Arabic (Quran),56.46,Probable artifact,Uncertain,88.4,100.0
+Hebrew (Torah),58.39,Probable artifact,Uncertain,96.6,100.0
+Hoax (Markov+injected),66.68,Probable artifact,Uncertain,100.0,97.6
+"Voynich, fully permuted (noise)",71.95,Probable artifact,Uncertain,99.1,77.9
+Voynich Manuscript,62.56,Probable artifact,Uncertain,100.0,100.0

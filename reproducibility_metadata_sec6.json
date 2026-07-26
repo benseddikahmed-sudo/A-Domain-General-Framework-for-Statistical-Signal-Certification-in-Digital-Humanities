@@ -1,0 +1,46 @@
+{
+  "description": "Reproducibility metadata for the APS weight-sensitivity analysis (manuscript Sec. 6 / Table 11), captured at execution time. Modeled on the ReproducibilityMetadata schema used throughout the Voynich statistical-auditing framework (dsh_framework).",
+  "timestamp_utc": "2026-07-25 13:59:28 UTC",
+  "python_version": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+  "numpy_version": "2.4.4",
+  "scipy_version": "1.17.1",
+  "pandas_version": "3.0.2 (installed but not used by this script)",
+  "random_seed": 42,
+  "system_info": {
+    "platform": "Linux-6.18.5-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python_implementation": "CPython",
+    "machine": "x86_64"
+  },
+  "git_commit": null,
+  "git_commit_note": "Not captured: analysis was run outside a git-tracked working copy. Recommended action before archiving: commit aps_sensitivity_load_data.py and aps_sensitivity_analysis.py to the new APS OSF repository and re-run this capture so git_commit is populated.",
+  "framework_version": "n/a (standalone sensitivity script, not part of dsh_framework versioning)",
+  "doi": "TBD -- new APS-specific OSF repository not yet created",
+  "input_dataset_hashes_sha256": {
+    "shakespeare": "fb0fde2fbd2edffad78f06a944d5ef51a2ddf4a2758cc9eb8e969c342bc256f8",
+    "copiale": "cab4038eb1371463529fd5db60a7b02d84fe5af33ca1658ce5254571eabe81c3",
+    "lojban": "770889fb589d7371ed8393782c1383080e2fb8a3344ab7d9d35f47ef50ea34dc",
+    "coptic": "c3376b5fcc01ba2e763078f4584048b3d38e9eca7d2c9c2fda70450b72e0c98a",
+    "zonaras": "e9c9b7feda5280daf236e18d825b7fef864872015d7e3e70b2c7c46b0424de7b",
+    "pride_and_prejudice": "ee07657f13d6e5add35b8cbbae9834e9a4df65a214c8ea16dfefc1d48c8291d8",
+    "patrologia": "7cff803565f710646b3254df1c2cc7ce8f97dcbe25fa65c700abbc908ceecc66",
+    "anna_komnene": "4e26097adc92dfb69b94bd30775d141dd81a9a41a387989661d4b7a2808423c1",
+    "moby_dick": "3237ad715b1e18c6f594450e45587d3ed661fc2be7ecca7cba22655c7da6b9fe",
+    "arabic": "9a589a452ff5a00ce5e0692b5fc44f95acfcae577d4fefda0ee6556a255b3ba6",
+    "hebrew": "6fd67f587f3b34e8b57ae82557828c559f7fcf4e094cdae755fcee6b3c6e31e4",
+    "hoax": "56438a5faa333cd9733f683a144a599dc8fd5fc7473545c4d7135f31208907f3",
+    "voynich_fully_permuted_noise": "30ca2d4e535a01b2998b31fe065a913ccac9f270d2c495117c855403d0d41712",
+    "voynich_manuscript_own_signal": "7a406f08098fc4699c47e5f5282f3fa1e6a38b2253c6643bd5f51adc1dd1a99e"
+  },
+  "input_dataset_provenance": "13 anchors from the pre-existing Voynich OSF calibration repository (calibration/<anchor>/results/*.json, unmodified) plus the Voynich manuscript's own s1-s5 values taken directly from Table 9 of the manuscript (not recomputed).",
+  "analysis_scripts": [
+    "aps_sensitivity_load_data.py  (loads/aggregates s1-s5 per anchor, cross-checks against Table 10 APS)",
+    "aps_sensitivity_analysis.py   (OAT and global weight-perturbation sensitivity analysis, N=5000 draws)"
+  ],
+  "output_files": [
+    "aps_sensitivity_results.json",
+    "aps_weight_sensitivity.csv"
+  ],
+  "perturbation_method": "Global: each baseline weight multiplied by a factor drawn uniform(0.6, 1.4), then renormalized to sum to 1 (N=5000 draws). OAT: each weight varied +-30% in 13 steps, remaining four weights renormalized proportionally.",
+  "known_limitation": "Sensitivity analysis uses per-anchor MEAN s1-s5 across replicates, not full replicate-level resampling; it isolates weight uncertainty from data uncertainty by design (see manuscript Sec. 6.2)."
+}
